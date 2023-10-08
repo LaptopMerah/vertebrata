@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Comfortaa:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+Body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #cfe4db;
+}
+
+header {
+    display: inline;
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 50px;
+}
+
+.header {
+    background-color: #8da38e;
+    padding: 50px;
+    font-size: 200%;
+}
+
+nav {
+    background-color: #637370;
+    padding: 15px;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 8px 20px 5px gray;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+nav a:hover {
+    color: #637370;
+    background-color: #c6d5c0;
+    font-weight: bolder;
+}
+
+#Home {
+    font-family: 'Acme', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10em;
+    margin: 40px;
+    scroll-margin: 50px;
+}
+
+#img-home {
+    width: 150px;
+    border-radius: 100%;
+    background-color: #7c8f8b;
+    box-shadow: 0px 0px 20px 5px #7c8f8b;
+}
+
+#Artikel, article {
+    scroll-margin: 70px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > li{
+    padding-left: 15px ;
+}
+
+.Box {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.2);
+    background-color: #abc1b5;
+    border-radius: 200px;
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+.Box a {
+    color: #464a49;
+    text-decoration: none;
+}
+
+.Box a:hover {
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.bos {
+    background-color: #abc1b5;
+    border-radius: 30px;
+    box-shadow: 10px 15px 15px 0 rgba(0, 0, 0, 0.2);
+    margin: 30px;
+    padding: 20px;
+}
+
+aside {
+    background: #77917f;
+    border-radius: 50px;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
+    box-shadow: 10px 15px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#P-Left {
+    width: 250px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+#P-Right {
+    text-align: left;
+    line-height: 1.8;
+}
+
+#P-Right > h3 {
+    font-size: bolder;
+    border-style: none none none inset;
+    border-color: silver;
+    text-indent: 5px;
+
+}
+
+footer {
+    background-color: #8da38e;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #Home {
+        column-gap: 1em;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+}
